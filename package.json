@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "supervisor server.js",
-    "start:prod": "set NODE_ENV=production&& npm install --omit=dev && supervisor server.js",
+    
     "debug": "ndb server.js",
     "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
     "build:js": "parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js"
