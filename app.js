@@ -1,8 +1,8 @@
 // import morgan from 'morgan';
 
 process.on('uncaughtException', (err) => {
-  // console.log(err);
-  // console.log(`UNCAUGHT EXCEPTION.......SHUTTING DOWN`);
+  console.log(err);
+  console.log(`UNCAUGHT EXCEPTION.......SHUTTING DOWN`);
 
   process.exit(1);
 });
@@ -104,7 +104,7 @@ app.use((req, res, next) => {
 //SEVERS STATIC FILES
 // app.use(express.static(`${__dirname}/public`));
 
-app.user(compression());
+app.use(compression());
 
 //TEST MIDDLEWARE
 app.use((req, res, next) => {
